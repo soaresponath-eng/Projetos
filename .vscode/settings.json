@@ -1,0 +1,7 @@
+{
+       "terminal.integrated.defaultProfile.windows": "PowerShell",
+       "files.associations": {
+              "IDADE.C": "cpp"
+       }
+    }
+    
