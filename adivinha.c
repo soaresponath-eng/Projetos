@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <locale.h>
 #include <stdlib.h>
 #include <time.h>
 
 int main(){
+    setlocale(LC_ALL, "Portuguese");
     int opcao, regras;
     int numeroSecreto, palpite;
 
@@ -21,16 +23,16 @@ int main(){
             scanf("%d", &palpite);
             if (numeroSecreto == palpite)
             {
-                printf("Voce acertou!!!\n");
-                printf("Numero secreto %d\n", numeroSecreto);
+                printf("Você acertou!!!\n");
+                printf("Número secreto %d\n", numeroSecreto);
             } else {
-                printf("Voce errou!!!");
-                printf("Numero secreto %d\n", numeroSecreto);
+                printf("Você errou!!!");
+                printf("Número secreto %d\n", numeroSecreto);
             }
             break;
 
         case 2:
-            printf("A explicacao das regras.\n");
+            printf("A explicação das regras.\n");
              printf("Digite a opcao relacionada as regras do jogo.\n");
              scanf("%d", &regras);
              switch (regras)
@@ -48,7 +50,7 @@ int main(){
             printf("Saindo do jogo!\n");
             break;
         default:
-            printf("Opcao invalida!\n");
+            printf("Opção inválida!\n");
             break;
     }
 
