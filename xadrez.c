@@ -9,7 +9,11 @@ int main(){
     int bispo = 5; //Bispo vai se mover 5 casas na diagonal
     int rainha = 8; //Rainha vai se mover 8 casas para esquerda
 
-    int i; //Variável de controle dos loops
+    //Movimento do cavalo em L
+    int cavalobaixo = 2;       // Cavalo 2 casas abaixo
+    int cavalodireita = 1;     // Cavalo 1 casa à direita
+
+    int i, j; //Variável de controle dos loops
 
     //Movimento da Torre
     //A torre se move em linha reta horizontalmente ou verticalmente
@@ -45,12 +49,31 @@ int main(){
         i++; //Incrementar contador
     } while(i <= rainha); //Condição de repetição
 
-       return 0 ;
+    printf("\n");
+
+    //Movimento do cavalo 
+    //O cavalo se move abaixo e a direita
+    //Movimento do cavalo usando "for" e "while aninhados"
+    printf("Movimento do cavalo:\n");
+
+    //Mover duas casas abaixo
+    for(i = 1; i <= cavalobaixo; i++){             //Loop externo
+         j = 1;
+         while(j <= 1){                           //Loop interno
+            printf("Baixo\n");
+            j++;
+         }
+        }
+         //Mover uma casa à direita
+         for(i = 1; i <= cavalodireita; i++){     //Loop externo
+         j = 1;
+         while(j <= 1){                           //Loop interno
+            printf("Direita\n");
+            j++;
+         }
+        }
+
+    }
 
 
 
-
-
-
-
-}
